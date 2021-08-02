@@ -7,7 +7,7 @@ function App() {
         fetch("https://dog.ceo/api/breeds/image/random")
             .then((resp) => resp.json())
             .then((data) => {
-                setDogImage(data.target)
+                setDogImage(data.message)
             });
     }, []);
 
